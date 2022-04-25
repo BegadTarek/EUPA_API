@@ -13,3 +13,5 @@ require_once(INC_PATH . DS . 'config.php');
 //core classes
 require_once(CORE_PATH . DS . "carousel_slide.php");
 require_once(CORE_PATH . DS . "scheduled_game.php");
+require_once(CORE_PATH . DS . "featured_article.php");
+require_once(CORE_PATH . DS . "team.php");
