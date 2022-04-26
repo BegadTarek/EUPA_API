@@ -16,14 +16,14 @@ if ($num > 0) {
 
     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
         extract($row);
-        $article_item = array(
+        $item = array(
             'id' => $id,
             'title' => $title,
             'paragraph' => $paragraph,
             'src' => $src,
             'full_article' => $full_article
         );
-        array_push($articles_arr, $article_item);
+        array_push($articles_arr, $item);
     }
 
     echo json_encode($articles_arr);
